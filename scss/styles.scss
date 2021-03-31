@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width:1100px;
+    margin:0 auto;
+}
+
+.goals {
+    // box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family:"roboto mono";
+    
+    &__table {
+        border:1px solid black;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        margin-bottom: 20px;
+        text-align: center;
+        border-radius: 3px;
+        input {
+            font-family: "roboto mono";
+        }
+        tr {
+            padding:20px;
+            border:1px solid black;
+        }
+        td {
+            padding:20px;
+            border:1px solid black;
+        }
+        &-header {
+            background-color: #009879;
+            color:white;
+            text-align: center;
+        }
+
+        &-add {
+            width:200px;
+            height:35px;
+            cursor:pointer;  
+            font-family:"roboto mono";
+            font-weight:700;
+            border:none;
+            background:lightgrey;
+            transition:0.3s;
+            outline:none;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            &:hover {
+                background-color: grey;
+            }
+        }
+
+        &-clearStorage {
+            width:200px;
+            height:35px;
+            cursor:pointer;  
+            font-family:"roboto mono";
+            font-weight:700;
+            border:none;
+            background:rgb(178, 6, 6);
+            color:white;
+            transition:0.3s;
+            outline:none;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            &:hover {
+                background-color: rgb(93, 14, 14);
+            }
+        }
+
+        &-goal {
+            width:230px;
+        }
+
+        &-jsMonthlyPrice {
+            button {
+                border:none;
+                background:none;
+                cursor:pointer;
+                outline:none;
+                transition:0.3s;
+                img {
+                    height:20px;
+                }
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+    
+}
